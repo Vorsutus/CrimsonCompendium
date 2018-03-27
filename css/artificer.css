@@ -183,7 +183,7 @@ nav ul li a {
 }
 #footerbar #location {
 	width: 30%;
-	float: left;
+	float: right;
 	display: block;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-variant: small-caps;
@@ -195,14 +195,17 @@ nav ul li a {
 
 #footerbar #CCVC  {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 20px;
 	max-width: 40%;
-	float: left;
-	display: block;
+	float: none;
 	font-size: small;
 	font-variant: small-caps;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: inline-block;
 }
 
 
@@ -257,9 +260,37 @@ footer {
 	margin-top: 100px;
 	font-size: 50px;
 }
+.invoke-portal nav42 a:link {
+	color: #FFFFFF;
+}
+.invoke-portal nav42 a:visited {
+	color: #680001;
+}
+/* mouse over link */
+.invoke-portal nav42 a:hover {
+    color: #F50004;
+}
+.invoke-portal nav42 a:active {
+    color: #DDCA18;
+}
 
+@media screen and (max-width : 1193px ){
+#footerbar #CCVC {
+	text-align: center;
+	margin-top: 10px;
+	max-width: 40%;
+	float: none;
+	font-size: small;
+	font-variant: small-caps;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-weight: 400;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: inline-block;
+}
 
-
+}
 
 @media screen and (max-width:992px){
 	.notOnDesktop {
@@ -357,6 +388,11 @@ footer {
 #mainwrapper #footerbar {
 
 }
+#footerbar #CCVC {
+	margin-top: 10px;
+
+}
+
 
 
 
@@ -537,7 +573,9 @@ footer {
 	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 10px;
-	border: thick groove #BEBEBE;
+	border: thick groove #B1B1B1;
+	font-weight: 400;
+	text-align: center;
 }
 .col-sm-pull-8 {
 }
@@ -582,12 +620,4 @@ footer {
 #mainwrapper {
 	margin: 0px;
 }
-
-
-
-
-
-
-
-
 }
