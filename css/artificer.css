@@ -92,15 +92,30 @@ footer article h3 {
 	text-align: center;
 	float: right;
 }
+#sidebar2 nav a {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 5px;
+	text-decoration: underline;
+	width: 100%;
+
+}
+
 #mainwrapper {
 	/* Container of all content */
 	width: 90%;
 	margin-left: 5%;
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 #mainwrapper #content {
-	flex: 1 0 auto;
+
+
 }
 
 #content #sidebar input {
@@ -122,10 +137,9 @@ footer article h3 {
 	overflow: auto;
 }
 #content #sidebar2 #adimage {
-	/* Container for Image in sidebar */
-	width: 100%;
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(0,0,0,1.00);
 	margin-top: 5px;
+	justify-content: center;
 }
 nav ul li {
 	list-style-type: none;
@@ -133,14 +147,7 @@ nav ul li {
 	padding-bottom: 8px;
 }
 nav ul {
-	padding-left: 0%;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	font-style: normal;
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 30px;
-	text-transform: uppercase;
-	letter-spacing: 0px;
+
 }
 nav ul li a {
 	color: rgba(146,146,146,1.00);
@@ -148,13 +155,21 @@ nav ul li a {
 }
 #footerbar {
 	background-color: rgba(255,255,255,1.00);
-	width: 100%;
+	width: 90%;
 	bottom: 0;
 	text-align: center;
 	min-height: 60px;
 	max-height: 80px;
-	flex-shrink: 0;
+	margin-left: 5%;
+	/* [disabled]margin-top: -60px; */
+	position: absolute;
+	clear: both;
+	float: left;
 }
+#footerbar .push {
+	height: 60px;
+}
+
 #footerbar #update  {
 	width: 30%;
 	float: left;
@@ -212,8 +227,10 @@ footer {
 }
 #sidebar2 #adimage img {
 	height: 150px;
-	width: 100%;
 	min-width: 130px;
+	max-width: 150px;
+	text-align: center;
+	vertical-align: middle;
 }
 #mainwrapper header nav a {
 	/* Links in header */
@@ -281,6 +298,7 @@ footer {
 	margin: auto;
 	padding-bottom: 10px;
 	position: relative;
+	text-align: center;
 }
 #content #sidebar #adimage {
 	/* Image in sidebar */
@@ -290,7 +308,6 @@ footer {
 }
 #content #sidebar2 #adimage {
 	margin-top: 0px;
-	display: inline-block;
 }
 #content #sidebar nav {
 	/* Navigation links in sidebar */
@@ -299,14 +316,18 @@ footer {
 	padding-left: 4%;
 }
 #content #sidebar2 nav {
-	padding-left: 4%;
-	display: inline-block;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 30%;
+	margin-bottom: 25px;
+	text-align: center;
+	justify-content: center;
 }
 #sidebar nav ul {
 	margin-top: 0px;
 }
 #sidebar2 nav ul {
-	margin-top: 0px;
+
 }
 footer {
 	/* Footer region */
@@ -338,6 +359,7 @@ footer {
 }
 
 
+
 }
 
 
@@ -363,7 +385,7 @@ footer {
 }
 #mainwrapper #content #sidebar2 {
 	padding-top: 13px;
-	margin: auto;
+	margin: 0px;
 	padding-bottom: 13px;
 	display: inline-table;
 	max-width: 130px;
@@ -398,8 +420,9 @@ footer {
 	padding-left: 4%;
 }
 #content #sidebar2 nav {
-	padding-left: 4%;
 	display: inline-block;
+	margin-left: 0px;
+	width: 100%;
 }
 #sidebar nav ul {
 	margin-top: 0px;
@@ -421,6 +444,15 @@ footer {
 	/* Header */
 	width: 100%;
 }
+#mainwrapper #content {
+	padding-bottom: 60px;
+}
+#footerbar {
+	clear: none;
+	position: relative;
+}
+
+
 }
 
 /* Mobile view */
@@ -450,7 +482,7 @@ footer {
 }
 #content #sidebar2 nav {
 	/* Navigation bar for links in sidebar */
-	width: 96%;
+	width: 100%;
 	padding-top: 7px;
 }
 #sidebar nav ul li {
@@ -474,25 +506,6 @@ footer {
 	max-width: 150px;
 	text-align: center;
 }
-#content .notOnDesktop {
-	/* Search box shown only in mobile and tablet view */
-	width: 100%;
-	text-align: center;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-#content .notOnDesktop input {
-	width: 80%;
-	text-align: center;
-}
-#content #mainContent h3 {
-	/* Title under maincontent, if any */
-	font-size: 14px;
-}
-#content footer article {
-	/* Each foter article */
-	width: 96%;
-}
 #sidebar div {
 	min-height: 1vmin;
 }
@@ -500,12 +513,16 @@ footer {
 	margin: 0px;
 
 }
+#footerbar {
+}
+
 
 }
 
 .bodybackground {
 	background-color: black;
 	text-align: center;
+	margin: 0px;
 	height: 100%;
 }
 .invoke-portal {
@@ -528,6 +545,7 @@ footer {
 @media screen and (max-width:576px){
 .bodybackground #mainwrapper #content {
 	width: 100%;
+	padding-bottom: 60px;
 }
 .bodybackground #mainwrapper {
 	width: 100%;
