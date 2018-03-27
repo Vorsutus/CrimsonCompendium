@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #mainwrapper header {
 	/*Header */
-	background-color: rgba(208,207,207,1.00);
+	background-color: rgba(255,255,255,1.00);
 	overflow: auto;
 	font-family: montserrat, sans-serif;
 	font-style: normal;
@@ -29,25 +29,6 @@
 header nav a {
 	/* Links in header */
 	padding-right: 2%;
-}
-#content #mainContent h1, #content #mainContent h2 {
-	/* Styling for main headings */
-	color: rgba(255,255,255,1.00);
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	text-decoration: underline;
-	text-align: center;
-	letter-spacing: 30px;
-	text-transform: uppercase;
-	margin-bottom: 75px;
-	margin-top: 100px;
-	font-size: 50px;
-}
-#content #mainContent h3 {
-	/*Captions ot Taglines */
-	font-family: source-sans-pro, sans-serif;
-	font-style: normal;
-	font-weight: 200;
-	color: rgba(146,146,146,1.00);
 }
 #content #mainContent #bannerImage {
 	/*Container for main banner image */
@@ -100,26 +81,28 @@ footer article h3 {
 #mainContent {
 	/* Container for the blog post in individal blog view */
 	padding-left: 2%;
-	width: 71%;
-	float: left;
+	width: 100%;
 	padding-right: 2%;
 	padding-top: 41px;
-}
-#mainwrapper #content #sidebar {
 	float: left;
-	background-color: rgba(0,0,0,1.00);
+	margin-left: 15%;
 }
 #mainwrapper #content #sidebar2 {
-	float: left;
 	background-color: rgba(0,0,0,1.00);
+	text-align: center;
+	float: right;
 }
 #mainwrapper {
 	/* Container of all content */
 	width: 90%;
-	overflow: auto;
 	margin-left: 5%;
-	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
+#mainwrapper #content {
+	flex: 1 0 auto;
+}
+
 #content #sidebar input {
 	/* Search box in sidebar */
 	width: 98%;
@@ -142,9 +125,7 @@ footer article h3 {
 	/* Container for Image in sidebar */
 	width: 100%;
 	background-color: rgba(208,207,207,1.00);
-	margin-top: 46px;
-	float: none;
-	overflow: auto;
+	margin-top: 5px;
 }
 nav ul li {
 	list-style-type: none;
@@ -166,14 +147,50 @@ nav ul li a {
 	text-decoration: none;
 }
 #footerbar {
-	/* Footer bar at the bottom of the page */
-	height: 25px;
-	clear: both;
-	background-color: rgba(208,207,207,1.00);
-	width: 90%;
-	position: absolute;
+	background-color: rgba(255,255,255,1.00);
+	width: 100%;
 	bottom: 0;
+	text-align: center;
+	min-height: 60px;
+	max-height: 80px;
+	flex-shrink: 0;
 }
+#footerbar #update  {
+	width: 30%;
+	float: left;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-variant: small-caps;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	margin-top: 20px;
+	font-size: small;
+}
+#footerbar #location {
+	width: 30%;
+	float: left;
+	display: block;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-variant: small-caps;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 20px;
+	font-size: small;
+}
+
+#footerbar #CCVC  {
+	text-align: center;
+	margin-top: 10px;
+	max-width: 40%;
+	float: left;
+	display: block;
+	font-size: small;
+	font-variant: small-caps;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-weight: 400;
+}
+
+
 footer {
 	/* Container for footer artices */
 	width: 71%;
@@ -194,21 +211,41 @@ footer {
 	float: left;
 }
 #sidebar2 #adimage img {
-	/* Image in sidebar */
+	height: 150px;
 	width: 100%;
-	float: left;
+	min-width: 130px;
 }
 #mainwrapper header nav a {
 	/* Links in header */
 	color: rgba(146,146,146,1.00);
 	text-decoration: none;
 }
+#mainwrapper #content #sidebar {
+	float: left;
+	background-color: black;
+	height: 100%;
+}
+#sidebar div {
+	background-color: #000000;
+	min-height: 87vmin;
+}
+#mainContent h1 {
+	color: rgba(255,255,255,1.00);
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-decoration: underline;
+	text-align: center;
+	letter-spacing: 30px;
+	text-transform: uppercase;
+	margin-bottom: 75px;
+	margin-top: 100px;
+	font-size: 50px;
+}
 
 
 
-/* Tablet view */
-@media screen and (max-width:769px) {
-.notOnDesktop {
+
+@media screen and (max-width:992px){
+	.notOnDesktop {
 	/* Search box shown only in mobile view and Tablet view */
 	display: block;
 	text-align: right;
@@ -223,36 +260,27 @@ footer {
 #mainContent {
 	/* Container for the blog post */
 	padding-top: 0px;
-	float: none;
-	width: 96%;
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
 }
 #sidebar input {
 	/* Search box in sidebar */
-	display: none;
+	display: inline-block;
 }
 #sidebar2 input {
 	/* Search box in sidebar */
 	display: none;
 }
 #mainwrapper #content #sidebar {
-	/* Sidebar*/
-	float: none;
-	width: 92%;
-	padding-top: 13px;
-	overflow: auto;
-	margin-top: 3px;
-	margin-left: 2%;
-	padding-bottom: 13px;
+	width: 100%;
+	float: left;
 }
 #mainwrapper #content #sidebar2 {
-	/* Sidebar*/
-	float: none;
-	width: 92%;
-	padding-top: 13px;
-	overflow: auto;
-	margin-top: 3px;
-	margin-left: 2%;
-	padding-bottom: 13px;
+	padding-top: 10px;
+	margin: auto;
+	padding-bottom: 10px;
+	position: relative;
 }
 #content #sidebar #adimage {
 	/* Image in sidebar */
@@ -261,10 +289,8 @@ footer {
 	float: left;
 }
 #content #sidebar2 #adimage {
-	/* Image in sidebar */
-	width: 60%;
 	margin-top: 0px;
-	float: left;
+	display: inline-block;
 }
 #content #sidebar nav {
 	/* Navigation links in sidebar */
@@ -273,10 +299,107 @@ footer {
 	padding-left: 4%;
 }
 #content #sidebar2 nav {
+	padding-left: 4%;
+	display: inline-block;
+}
+#sidebar nav ul {
+	margin-top: 0px;
+}
+#sidebar2 nav ul {
+	margin-top: 0px;
+}
+footer {
+	/* Footer region */
+	width: 96%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+#content footer article {
+	/*Each footer article */
+	width: 46%;
+}
+#mainwrapper header {
+	/* Header */
+	width: 100%;
+}
+#mainContent h1  {
+	color: rgba(255,255,255,1.00);
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-decoration: underline;
+	text-align: center;
+	letter-spacing: 30px;
+	text-transform: uppercase;
+	margin-bottom: 75px;
+	margin-top: 100px;
+	font-size: 50px;
+}
+#mainwrapper #footerbar {
+
+}
+
+
+}
+
+
+/* Tablet view */
+@media screen and (max-width:769px) {
+#mainContent {
+	/* Container for the blog post */
+	padding-top: 0px;
+	float: left;
+	width: 100%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#sidebar2 input {
+	/* Search box in sidebar */
+	display: none;
+}
+#mainwrapper #content #sidebar {
+	/* Sidebar*/
+	float: left;
+	width: 100%;
+	min-height: 1vmin;
+}
+#mainwrapper #content #sidebar2 {
+	padding-top: 13px;
+	margin: auto;
+	padding-bottom: 13px;
+	display: inline-table;
+	max-width: 130px;
+	float: none;
+}
+#mainContent h1 {
+	letter-spacing: 15px;
+	font-size: 30px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin-bottom: 75px;
+	margin-top: 100px;
+}
+
+#content #sidebar #adimage {
+	/* Image in sidebar */
+	width: 60%;
+	margin-top: 0px;
+	float: left;
+}
+#content #sidebar2 #adimage {
+	margin-top: 0px;
+	display: inline-block;
+}
+#content #sidebar nav {
 	/* Navigation links in sidebar */
 	width: 36%;
 	float: left;
 	padding-left: 4%;
+}
+#content #sidebar2 nav {
+	padding-left: 4%;
+	display: inline-block;
 }
 #sidebar nav ul {
 	margin-top: 0px;
@@ -318,8 +441,7 @@ footer {
 	width: 100%;
 }
 #content #sidebar2 #adimage {
-	/* Container for image in sidebar */
-	width: 100%;
+	display: inline-block;
 }
 #content #sidebar nav {
 	/* Navigation bar for links in sidebar */
@@ -342,12 +464,15 @@ footer {
 	text-align: center;
 }
 #mainwrapper #content #sidebar {
-	/* sidebar */
-	padding-bottom: 0px;
+	float: left;
+	width: 100%;
 }
 #mainwrapper #content #sidebar2 {
 	/* sidebar */
 	padding-bottom: 0px;
+	margin: auto;
+	max-width: 150px;
+	text-align: center;
 }
 #content .notOnDesktop {
 	/* Search box shown only in mobile and tablet view */
@@ -368,9 +493,19 @@ footer {
 	/* Each foter article */
 	width: 96%;
 }
+#sidebar div {
+	min-height: 1vmin;
 }
+#mainContent .invoke-portal {
+	margin: 0px;
+
+}
+
+}
+
 .bodybackground {
 	background-color: black;
+	text-align: center;
 	height: 100%;
 }
 .invoke-portal {
@@ -386,4 +521,55 @@ footer {
 	text-transform: uppercase;
 	letter-spacing: 10px;
 	border: thick groove #BEBEBE;
+}
+.col-sm-pull-8 {
+}
+
+@media screen and (max-width:576px){
+.bodybackground #mainwrapper #content {
+	width: 100%;
+}
+.bodybackground #mainwrapper {
+	width: 100%;
+	margin-left: 0;
+}
+#content #mainContent {
+	padding-top: 0px;
+	float: left;
+	width: 100%;
+	margin-left: 0;
+}
+#footerbar #CCVC  {
+	max-width: 40%;
+	float: left;
+}
+#footerbar #update {
+	float: none;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+#footerbar #CCVC {
+	float: none;
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2px;
+}
+#footerbar #location {
+	float: none;
+	width: 100%;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+#mainwrapper {
+	margin: 0px;
+}
+
+
+
+
+
+
+
+
 }
