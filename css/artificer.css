@@ -307,10 +307,11 @@ footer {
 #logo img {
 	text-shadow: 10px 7px 7px #000000;
 	margin-right: 5px;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	text-align: center;
 	margin-left: 25px;
+	background-color: rgba(199,0,2,0.37);
 
 }
 .row {
@@ -476,23 +477,23 @@ footer {
 }
 
 .vid-list-container {
-	width: 92%;
 	overflow: hidden;
 	margin-top: 20px;
-	margin-left:4%;
 	padding-bottom: 20px;
+	margin-left: 4%;
+	width: 92%;
 }
 
 .vid-list {
 	width: 1344px;
 	position: relative;
-	top:0;
-	left: 0;
+	top: 0px;
+	left: 0px;
 }
 
 .thumb {
-	overflow:hidden;
-	height: 84px;
+	overflow: hidden;
+	height: 71px;
 }
 
 .thumb img {
@@ -505,6 +506,50 @@ footer {
 	color: #FFFFFF;
 	font-size: 15px;
 	margin-top: 5px;
+}
+
+.arrows {
+	position: relative;
+	width: 100%;
+}
+
+.arrow-left {
+	color: #FFFFFF;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	left: 0px;
+	top: 20px;
+	z-index: 99;
+	cursor: pointer;
+}
+
+.arrow-right {
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	right: 0px;
+	top: 20px;
+	z-index: 100;
+	cursor: pointer;
+}
+
+@media (max-width: 624px) {
+	.arrows {
+	position: relative;
+	margin-right: auto;
+	margin-bottom: 0;
+	width: 103%;
+	}
+	.arrow-left {
+	top: 20px;
+	}
+
+	.arrow-right {
+	right: 0;
+	top: 20px;
+	}
 }
 
 /*************************************
@@ -754,7 +799,7 @@ footer {
 	width: 100%;
 }
 #mainwrapper #videos .vid-container {
-	padding-bottom: 57%;
+	padding-bottom: 62%;
 }
 .bodybackground #mainwrapper #videos {
 	width: 100%;

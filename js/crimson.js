@@ -1,3 +1,6 @@
+
+///////STUFF FOR MODAL IMAGES
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -44,6 +47,7 @@ span.onclick = function() {
 }
 
 
+//////////////STUFF FOR VIDEO GALLERY
 
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -83,6 +87,7 @@ $(document).ready(function () {
             scrollLeft: "+=336"
         }, 750);
     });
+	
     $(".arrow-left").bind("click", function (event) {
         event.preventDefault();
         $(".vid-list-container").stop().animate({

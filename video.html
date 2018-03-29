@@ -16,7 +16,11 @@
 	
 <script src="http://use.edgefonts.net/black-ops-one:n4:default;patua-one:n4:default;stencil-std:n4:default;unifrakturcook:n7:default;source-sans-pro:n4,n2:default.js" type="text/javascript"></script>
 	
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<script type="text/javascript" src="js/crimson.js"></script>
+	
+<link rel="stylesheet" href="css/fontawesome.min.css">
+	
+<!--parameters for YouTube Referer Access-->	
 </head>
 	
 <video_contain class="video_contain">
@@ -55,30 +59,73 @@
 	
 	<!--VIDEO BOX-->
 <div class="vid-container">
-	<iframe id="vid_frame" src="http://www.youtube.com/embed/eg6kNoJmzkY?rel=0&showinfo=0&autohide=1" width="560" height="315" frameborder="0"></iframe>
-</div>
+
+	<!--VIDEO PLAYER-->
+<iframe id="vid_frame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 	
-<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/eg6kNoJmzkY?autoplay=1&rel=0&showinfo=0&autohide=1'">
-	<div class="thumb">
-		<img src="http://img.youtube.com/vi/eg6kNoJmzkY/1.jpg" alt="" />
 	</div>
-	<div class="desc">
-		Jessica Hernandez & the Deltas - Dead Brains
-	</div>
-</div>
 	
+<div class="vid-list-container">
+  <div class="vid-list">   
+	
+	<!--FAT CAT MAYDAY-->
+	<div class="vid-item" alt="Fatcat Mayday" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+      <div class="thumb"><img src="http://img.youtube.com/vi/DT61L8hbbJ4/0.jpg"></div>
+      	<div class="desc">TheFatRat - MAYDAY feat. Laura Brehm</div>
+      </div>	 
+	  
+	<!--PAYDAY 2-->
+	<div class="vid-item" alt="PayDay 2 Gauntlet" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/5RIyse9ErA4?autoplay=1&rel=0&showinfo=0&autohide=1&start=36'">
+	  <div class="thumb"><img src="http://img.youtube.com/vi/5RIyse9ErA4/0.jpg"></div>
+	  <div class="desc">PAYDAY 2 Soundtrack: The Gauntlet</div>
+	</div>  
+	
+	  <!--Position Music TakeDown-->
+	<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/axktlq0o93Y?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+		<div class="thumb"><img src="http://img.youtube.com/vi/axktlq0o93Y/0.jpg"></div>
+		<div class="desc">Position Music - Takedown</div>
+		</div>
+	  <!--Superhero Showdown-->
+	<div class="vid-item" alt="PositionMusic - SuperheroShowdown" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/AdJtx7A2Org?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+		<div class="thumb"><img src="http://img.youtube.com/vi/AdJtx7A2Org/0.jpg"></div>
+		<div class="desc">Position Music - Superhero Showdown</div>
+	</div>
+	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/RTHI_uGyfTM?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+		<div class="thumb"><img src="http://img.youtube.com/vi/RTHI_uGyfTM/0.jpg"></div>
+		<div class="desc">Winter Harp performs Caravan</div>
+	</div>  
+	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/abQRt6p8T7g?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+		<div class="thumb"><img src="http://img.youtube.com/vi/abQRt6p8T7g/0.jpg"></div>
+		<div class="desc">The Avett Brothers Tiny Desk Concert</div>
+	</div> 
+	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fpmN9JorFew?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+		<div class="thumb"><img src="http://img.youtube.com/vi/fpmN9JorFew/0.jpg"></div>
+		<div class="desc">Tracy Chapman - Give Me One Reason</div>
+	</div>
+	  	  
+	<!--COUNT RUGEN-->
+    <div class="vid-item" alt="CountRugen" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/i3AjEoryaKw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+      <div class="thumb">
+        <img src="https://i.ytimg.com/vi/i3AjEoryaKw/2.jpg" alt="" />
+        </div>
+      <div class="desc">
+        Count Rugen the 6-Fingered Cat Explores the Backyard
+        </div>
+      </div>
+  </div>
+	
+	<!-- LEFT AND RIGHT ARROWS -->
 <div class="arrows">
 	<div class="arrow-left">
 		<i class="fa fa-chevron-left fa-lg"></i>
 	</div>
 	<div class="arrow-right">
-		<i class="fa fa-chevron-right fa-lg"></i>
+		<i class="fas fa-arrow-right fa-lg"></i>
 	</div>
-</div>
+		</div>
+	</div>	
+</div>	
 	
-</div>
-		
-
 	
 <!-- Small footerbar at the bottom --> 
 <div id="footerbar">
@@ -87,10 +134,15 @@
   <div id="location">Boise, Idaho USA</div>
 </div>
 	
+	
+	<!--END OF MAINWRAPPER-->
 </div>
 	
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+	
+<link rel="stylesheet" href="css/fontawesome.min.css">
+	
 <script type="text/javascript" src="js/crimson.js"></script>
 	
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
