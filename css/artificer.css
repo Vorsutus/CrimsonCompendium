@@ -124,6 +124,7 @@ footer article h3 {
 	padding-top: 100px;
 	float: left;
 	margin-left: 15%;
+	margin-top: 70px;
 }
 #mainwrapper #content #sidebar2 {
 	background-color: rgba(0,0,0,0.00);
@@ -141,7 +142,6 @@ footer article h3 {
 	text-decoration: underline;
 	width: 100%;
 	font-style: normal;
-
 }
 
 #mainwrapper {
@@ -154,9 +154,37 @@ footer article h3 {
 	position: absolute;
 }
 #mainwrapper #content {
+	width: 100%;
+}
+.imggroup {
+	width: 40%;
+	text-align: center;
+	background-size: 140px 170px;
+	background-repeat: no-repeat;
+	background-image: url(../images/redskull.gif);
+	color: rgba(255,255,255,1.00);
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-style: italic;
+	font-weight: 400;
+	font-variant: small-caps;
+	text-shadow: 7px 5px 7px rgba(0,0,0,1.00);
+	background-position: 100% 0%;
+	margin-left: 20%;
+}
+.imggroup h1 {
+	margin-top: 175px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	float: right;
+	width: 140px;
+}
 
-
-
+#content .imggroup h1 {
+	position: relative;
+	vertical-align: middle;
+	margin-top: 65vmin;
 }
 
 #content #sidebar input {
@@ -310,8 +338,7 @@ footer {
 	color: #FFFFFF;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	text-align: center;
-	margin-left: 25px;
-	background-color: rgba(199,0,2,0.37);
+	background-color: rgba(191,0,1,0.37);
 
 }
 .row {
@@ -335,6 +362,14 @@ footer {
   margin-top: 8px;
   vertical-align: middle;
 }
+#game3 iframe {
+	width: 550;
+	height: 400;
+
+
+
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -442,6 +477,29 @@ footer {
 	font-size: 35px;
 	letter-spacing: 15px;
 }
+
+}
+
+.myHeader {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-decoration: underline;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	letter-spacing: 30px;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin-bottom: 75px;
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 25px;
+}
+#gamecontent #game3 {
+	display: flex;
+	width: 100%;
+}
+#gamecontent centergame {
+	width: 100%;
 
 }
 
@@ -691,11 +749,8 @@ footer {
 }
 #mainwrapper #content #sidebar2 {
 	padding-top: 13px;
-	margin: 0px;
 	padding-bottom: 50px;
-	display: inline-table;
-	max-width: 130px;
-	float: none;
+	max-width: 100%;
 }
 
 #content #sidebar #adimage {
@@ -706,7 +761,7 @@ footer {
 }
 #content #sidebar2 #adimage {
 	margin-top: 0px;
-	display: inline-block;
+	width: 100%;
 }
 #content #sidebar nav {
 	/* Navigation links in sidebar */
@@ -738,7 +793,7 @@ footer {
 #mainwrapper header {
 	/* Header */
 	width: 100%;
-	position: absolute;
+	/* [disabled]position: absolute; */
 	padding-bottom: 0px;
 }
 #mainwrapper #content {
@@ -837,6 +892,45 @@ footer {
 	left: 0px;
 	margin-left: 0px;
 }
+#videos h1 {
+}
+#biocontent .imggroup {
+	display: none;
+}
+#biocontent #imggroup-sm {
+	width: 100%;
+	margin-left: 0;
+	background-position: 50% 0px;
+	display: block;
+	height: 215px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#biocontent .biogroup {
+	min-width: 200%;
+	max-width: 100%;
+
+}
+#mainwrapper #biocontent {
+	display: block;
+}
+#imggroup-sm h1 {
+	float: none;
+	margin-top: 175px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 0px;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
+
 
 
 }
@@ -859,6 +953,7 @@ footer {
 }
 #content #sidebar2 #adimage {
 	display: inline-block;
+	float: left;
 }
 #content #sidebar nav {
 	/* Navigation bar for links in sidebar */
@@ -887,8 +982,7 @@ footer {
 #mainwrapper #content #sidebar2 {
 	/* sidebar */
 	padding-bottom: 31px;
-	margin: auto;
-	max-width: 150px;
+	max-width: 100%;
 	text-align: center;
 }
 #sidebar div {
@@ -900,6 +994,10 @@ footer {
 }
 #footerbar {
 }
+.myHeader {
+	font-size: 35px;
+}
+
 }
 
 .bodybackground {
@@ -932,6 +1030,7 @@ footer {
 
 .invoke-portal {
 	text-align: center;
+	padding-top: 30px;
 }
 .invoke-portal nav42 {
 	margin: 30px 2%;
@@ -947,24 +1046,9 @@ footer {
 	text-align: center;
 }
 
-.myHeader {
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
-	text-decoration: underline;
-	text-align: center;
-	color: rgba(255,255,255,1.00);
-	letter-spacing: 30px;
-	text-transform: uppercase;
-	font-size: 50px;
-	margin-bottom: 75px;
-	padding-top: 25px;
-	padding-right: 25px;
-	padding-left: 25px;
-	padding-bottom: 25px;
-}
-
 #art {
 	display: flex;
-	margin-top: 100px;
+	margin-top: 150px;
 	flex-direction: column;
 	position: fixed;
 	width: 100%;
@@ -984,4 +1068,119 @@ footer {
 	margin-left: 0%;
 	height: 100%;
 }
+#videos h1 {
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+
+.biogroup {
+	height: 100%;
+	text-align: left;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-variant: small-caps;
+	font-weight: 400;
+	color: rgba(255,255,255,1.00);
+	max-width: 40%;
+	min-width: 200px;
+	overflow-y: auto;
+	perspective: 1px;
+}
+.interests {
+	border: 5px groove rgba(255,255,255,1.00);
+	height: auto;
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: auto;
+}
+.biogroup h1 {
+	font-size: 24px;
+}
+.biogroup p {
+	font-size: 15px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: italic;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-align: left;
+	color: rgba(208,208,208,1.00);
+}
+
+
+
+.education{
+	border: 5px groove rgba(255,255,255,1.00);
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 20px 0;
+	padding-left: 10px;
+	
+}
+.history {
+	border: 5px groove rgba(255,255,255,1.00);
+	height: auto;
+	padding-top: 5px;
+	padding-bottom: auto;
+	margin: 20px 0;
+	padding-left: 10px;
+	padding-right: auto;
+}
+#biocontent {
+	width: 100%;
+	height: 85vh;
+	display: flex;
+}
+#imggroup-sm {
+	display: none;
+}
+#gamecontent {
+	height: 80vh;
+	width: 90%;
+	display: flex;
+	margin-top: 150px;
+	flex-direction: column;
+	position: fixed;
+	overflow-y: auto;
+	perspective: 1px;
+}
+#gameH1 {
+	text-align: left;
+	min-width: 25%;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-variant: small-caps;
+	font-weight: 400;
+	color: rgba(255,255,255,1.00);
+}
+#gameH1-R {
+	text-align: right;
+	min-width: 25%;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-variant: small-caps;
+	font-weight: 400;
+	text-decoration: underline;
+	flex-basis: auto;
+}
+#gameP {
+	display: flex;
+}
+#gameName {
+	padding-top: 2px;
+	padding-bottom: 20px;
+	text-decoration: none;
+
+}
+#gameDesc {
+	font-style: italic;
+	color: rgba(163,163,163,1.00);
+	text-decoration: none;
+	padding-bottom: 25px;
+}
+#gameTitle {
+	text-decoration: underline;
 }
