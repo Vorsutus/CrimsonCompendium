@@ -1223,3 +1223,50 @@ footer {
 	text-align: left;
 	padding-left: 20px;
 }
+#more {
+	display: flex;
+	margin-top: 150px;
+	flex-direction: column;
+	position: fixed;
+	width: 90%;
+	height: 80vh;
+	overflow-y: auto;
+	perspective: 1px;
+	color: rgba(255,255,255,1.00);
+}
+.moreSubjects {
+	width: 100%;
+	display: flex;
+}
+#people {
+	text-align: left;
+	width: 25%;
+	border: thick groove rgba(255,255,255,1.00);
+	height: 100%;
+}
+#topics {
+	border: thick groove rgba(255,255,255,1.00);
+	width: 25%;
+	text-align: center;
+	height: 100%;
+}
+#discussion {
+	height: 91px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	text-transform: capitalize;
+	font-size: 47px;
+	text-align: center;
+	line-height: 175%;
+	border: thick groove rgba(255,255,255,1.00);
+}
+#moreCenter {
+	width: 50%;
+	min-width: 350px;
+}
+#Blog {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+.blogCSS {
+}
