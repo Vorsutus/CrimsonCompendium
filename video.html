@@ -7,25 +7,21 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	
+
 <link href="css/artificer.css" rel="stylesheet" type="text/css">
 <title>The Crimson Compendium</title>
-
-<!--download font script-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-	
-<script src="http://use.edgefonts.net/black-ops-one:n4:default;patua-one:n4:default;stencil-std:n4:default;unifrakturcook:n7:default;source-sans-pro:n4,n2:default.js" type="text/javascript"></script>
 	
 <script type="text/javascript" src="js/crimson.js"></script>
+
+<script type="text/javascript" src="js/fontAwesome.js"></script>
 	
-<link rel="stylesheet" href="css/fontawesome.min.css">
-	
-<!--parameters for YouTube Referer Access-->	
+<!--FONT AWESOME CDN-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		
 </head>
 	
 <video_contain class="video_contain">
-  <video width="100%
-			  " height="100%" src="videos/8 Ground Fog Light.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto">
+  <video width="100%" height="100%" src="videos/8 Ground Fog Light.mp4" autoplay="autoplay" loop="loop" muted="muted" preload="auto">
     <object width="100%" height="100%" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" name="bannertext" bgcolor="#807f7f">
       <param name="src" value="https://blackboard.boisestate.edu/webapps/vtbe-tinymce/tiny_mce/plugins/media/moxieplayer.swf" />
       <param name="flashvars" value="url=https%3A//blackboard.boisestate.edu/courses/1/1183-10875ENGL2024003/pagebanner/blackboard.data.navigation.Tab/_186774_1/embedded/bg_video.mp4&amp;poster=/webapps/blackboard/execute/" />
@@ -38,12 +34,14 @@
 	
 <body class="bodybackground">
 <div id="mainwrapper">
+	
+ <!--**************************************************************************
+Header starts here.
+****************************************************************************-->
 <header> 
-  <!--**************************************************************************
-    Header starts here.
-    ****************************************************************************-->
   <div id="logo"> <img src="images/Undead BSU_2.1.png" alt="sample logo" width="54" height="49">The Crimson Compendium </div>
 	
+	<!--NAV BUTTONS-->
   <nav> 
 	  <a href="index.html" title="Begin Again" target="_parent">Home</a> 
 	  <a href="games.html" title="Games Are Fun" target="_parent">Games</a> 
@@ -55,76 +53,80 @@
 </header>
 	
 <div id="videos">
-  <h1><strong class="myHeader">Videos</strong></h1>
+<h1><strong class="myHeader">Videos</strong></h1>
+  <div class="myVidContainer">
 	
-	<!--VIDEO BOX-->
-<div class="vid-container">
-
-	<!--VIDEO PLAYER-->
-<iframe id="vid_frame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	
-	</div>
-	
-<div class="vid-list-container">
-  <div class="vid-list">   
-	
-	<!--FAT CAT MAYDAY-->
-	<div class="vid-item" alt="Fatcat Mayday" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?autoplay=1&rel=0&showinfo=0&autohide=1'">
-      <div class="thumb"><img src="http://img.youtube.com/vi/DT61L8hbbJ4/0.jpg"></div>
-      	<div class="desc">TheFatRat - MAYDAY feat. Laura Brehm</div>
-      </div>	 
-	  
-	<!--PAYDAY 2-->
-	<div class="vid-item" alt="PayDay 2 Gauntlet" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/5RIyse9ErA4?autoplay=1&rel=0&showinfo=0&autohide=1&start=36'">
-	  <div class="thumb"><img src="http://img.youtube.com/vi/5RIyse9ErA4/0.jpg"></div>
-	  <div class="desc">PAYDAY 2 Soundtrack: The Gauntlet</div>
-	</div>  
-	
-	  <!--Position Music TakeDown-->
-	<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/axktlq0o93Y?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-		<div class="thumb"><img src="http://img.youtube.com/vi/axktlq0o93Y/0.jpg"></div>
-		<div class="desc">Position Music - Takedown</div>
-		</div>
-	  <!--Superhero Showdown-->
-	<div class="vid-item" alt="PositionMusic - SuperheroShowdown" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/AdJtx7A2Org?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-		<div class="thumb"><img src="http://img.youtube.com/vi/AdJtx7A2Org/0.jpg"></div>
-		<div class="desc">Position Music - Superhero Showdown</div>
-	</div>
-	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/RTHI_uGyfTM?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-		<div class="thumb"><img src="http://img.youtube.com/vi/RTHI_uGyfTM/0.jpg"></div>
-		<div class="desc">Winter Harp performs Caravan</div>
-	</div>  
-	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/abQRt6p8T7g?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-		<div class="thumb"><img src="http://img.youtube.com/vi/abQRt6p8T7g/0.jpg"></div>
-		<div class="desc">The Avett Brothers Tiny Desk Concert</div>
-	</div> 
-	<div class="vid-item" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/fpmN9JorFew?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
-		<div class="thumb"><img src="http://img.youtube.com/vi/fpmN9JorFew/0.jpg"></div>
-		<div class="desc">Tracy Chapman - Give Me One Reason</div>
-	</div>
-	  	  
-	<!--COUNT RUGEN-->
-    <div class="vid-item" alt="CountRugen" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/i3AjEoryaKw?autoplay=1&rel=0&showinfo=0&autohide=1'">
-      <div class="thumb">
-        <img src="https://i.ytimg.com/vi/i3AjEoryaKw/2.jpg" alt="" />
+	  <!--VIDEO PLAYER-->
+    <div class="vid-container">
+      
+      <iframe id="vid_frame" width="560" height="315" src="https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+	 
+	  <!--VIDEO LIST GROUP-->
+    <div class="vid-list-container">
+		
+      <div class="vid-list">
+        <!--FAT CAT MAYDAY-->
+        <div class="vid-item" alt="Fatcat Mayday" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/DT61L8hbbJ4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/DT61L8hbbJ4/0.jpg"></div>
+          <div class="desc">TheFatRat - MAYDAY feat. Laura Brehm</div>
         </div>
-      <div class="desc">
-        Count Rugen the 6-Fingered Cat Explores the Backyard
+        <!--PAYDAY 2-->
+        <div class="vid-item" alt="PayDay2 - The Gauntlet" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/5RIyse9ErA4?autoplay=1&rel=0&showinfo=0&autohide=1&start=36'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/5RIyse9ErA4/0.jpg"></div>
+          <div class="desc">PAYDAY 2 Soundtrack: The Gauntlet</div>
         </div>
+        <!--POSITION MUSIC TAKEDOWN-->
+        <div class="vid-item" alt="PositionMusic - Takedown" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/axktlq0o93Y?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/axktlq0o93Y/0.jpg"></div>
+          <div class="desc">Position Music - Takedown</div>
+        </div>
+        <!--BSU DRONE RACING-->
+        <div class="vid-item" alt="Drone Racing" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/zVcOhLRyVxE?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/zVcOhLRyVxE/0.jpg"></div>
+          <div class="desc">BSU Drone Sports Proposal</div>
+        </div>
+        <!--KULESHOV EFFECT-->
+        <div class="vid-item" alt="Kuleshov Effect" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/rRW9C9o2fRw?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/rRW9C9o2fRw/0.jpg"></div>
+          <div class="desc">The Kuleshov Effect</div>
+        </div>
+        <!--CARAVANPALACE-->
+        <div class="vid-item" alt="CaravanPalace - Wonderland" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/vCXsRoyFRQE?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/vCXsRoyFRQE/0.jpg"></div>
+          <div class="desc">Caravan Palace - Wonderland</div>
+        </div>
+        <!--SAM HARRIS-->
+        <div class="vid-item" alt="SamHarris - Meaning of Life" onclick="document.getElementById('vid_frame').src='http://youtube.com/embed/srxDtefn740?autoplay=1&amp;rel=0&amp;showinfo=0&amp;autohide=1'">
+          <div class="thumb"><img src="http://img.youtube.com/vi/srxDtefn740/0.jpg"></div>
+          <div class="desc">The Meaning of Life - Sam Harris</div>
+        </div>
+        <!--COUNT RUGEN-->
+        <div class="vid-item" alt="CountRugen" onClick="document.getElementById('vid_frame').src='https://www.youtube-nocookie.com/embed/i3AjEoryaKw?autoplay=1&rel=0&showinfo=0&autohide=1'">
+          <div class="thumb"> <img src="https://i.ytimg.com/vi/i3AjEoryaKw/2.jpg" alt="" /> </div>
+          <div class="desc"> Count Rugen the 6-Fingered Cat Explores the Backyard </div>
+        </div>
+        <!--END OF VID-LIST-->
       </div>
+      <!--END OF VID-LIST-CONTAINER-->
+    </div>
+	  
+<!-- LEFT AND RIGHT ARROWS -->
+    <div class="arrows">
+      <div class="arrow-left"> 
+		  <i class="fa fa-chevron-left fa-lg "></i> 
+		</div>
+      <div class="arrow-right"> 
+		  <i class="fa fa-chevron-right fa-lg"> </i> 
+		</div>
+    </div>
+	  
+	  
+	</div>
+	<!--END OF VIDEOS DIV-->
   </div>
 	
-	<!-- LEFT AND RIGHT ARROWS -->
-<div class="arrows">
-	<div class="arrow-left">
-		<i class="fa fa-chevron-left fa-lg"></i>
-	</div>
-	<div class="arrow-right">
-		<i class="fas fa-arrow-right fa-lg"></i>
-	</div>
-		</div>
-	</div>	
-</div>	
+	
 	
 	
 <!-- Small footerbar at the bottom --> 
@@ -138,12 +140,14 @@
 	<!--END OF MAINWRAPPER-->
 </div>
 	
+	
+	
+	
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 	
-<link rel="stylesheet" href="css/fontawesome.min.css">
-	
 <script type="text/javascript" src="js/crimson.js"></script>
+	
 	
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
 	
