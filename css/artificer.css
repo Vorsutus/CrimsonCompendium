@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #mainwrapper header {
 	/*Header */
-	background-color: rgba(255,255,255,0.00);
+	background-color: rgba(0,0,0,0.00);
 	overflow: auto;
 	font-family: montserrat, sans-serif;
 	font-style: italic;
@@ -215,9 +215,7 @@ nav ul li {
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
-nav ul {
 
-}
 nav ul li a {
 	color: rgba(146,146,146,1.00);
 	text-decoration: none;
@@ -346,6 +344,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
+	margin-top: 75px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -359,23 +358,78 @@ footer {
 }
 
 .column img {
-  margin-top: 8px;
-  vertical-align: middle;
+	margin-top: 8px;
+	vertical-align: middle;
+	opacity: 0.65;
 }
-#game3 iframe {
+.game iframe {
 	width: 550;
 	height: 400;
 
 
 
 }
+.gameContainer .game {
+	display: flex;
+	padding-bottom: 60px;
+}
+#topics ul li {
+	cursor: pointer;
+	transition: 0.3s;
+}
+#topics ul li:hover {
+	font-size: 17px;
+	color: #F50004;
+}
+#people ul li:hover {
+	font-size: 17px;
+	color: #F50004;
+}
+#people ul a li {
+	cursor: pointer;
+	transition: 0.3s;
+	color: white;
+}
+/*.arrow-left:hover {
+	background-color: rgba(213,0,3,1.00);
+	transition: 0.3s;
+}
+.arrow-right:hover {
+	background-color: rgba(213,0,3,1.00);
+	transition: 0.3s;
+}*/
+header a {
+	color: inherit;
+}
+
+header a:hover {
+	color: #FFFFFF;
+}
+h1 strong a {
+	color: inherit;
+}
+h1 strong a:hover {
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
+#gamecontent .game {
+	display: flex;
+	width: 100%;
+	padding-top: 450px;
+}
   .column {
-    flex: 50%;
-    max-width: 50%;
+	flex: 50%;
+	max-width: 50%;
   }
 }
 
@@ -394,7 +448,6 @@ footer {
     transition: 0.3s;
 }
 
-.myImg:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -494,8 +547,7 @@ footer {
 	padding-left: 25px;
 	padding-bottom: 25px;
 }
-#gamecontent #game3 {
-	display: flex;
+#gamecontent .gameContainer {
 	width: 100%;
 }
 #gamecontent centergame {
@@ -512,42 +564,47 @@ footer {
 
 .vid-container {
 	position: relative;
-	padding-bottom: 28%;
+	padding-bottom: 52%;
+	padding-top: 30px;
+	height: 0px;
 }
 
 .vid-container iframe,
 .vid-container object,
 .vid-container embed {
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	left: 25%;
+	left: 0px;
 	top: 0px;
 }
 
 .vid-item {
-	display: block;
 	width: 148px;
 	height: 148px;
 	float: left;
-	margin: 0;
-	padding: 10px;
+	margin: 5px;
+	cursor: pointer;
+	opacity: .7;
+	position: relative;
+}
+.vid-item:hover {
+	opacity: 1;
+	transition: 0.3s;
 }
 
+
 .vid-list-container {
-	overflow: hidden;
-	margin-top: 20px;
-	padding-bottom: 20px;
-	margin-left: 4%;
 	width: 92%;
+	overflow: hidden;
+	float: left;
 }
 
 .vid-list {
 	width: 1344px;
-	position: relative;
-	top: 0px;
-	left: 0px;
+	float: left;
 }
+
 
 .thumb {
 	overflow: hidden;
@@ -563,50 +620,47 @@ footer {
 .vid-item .desc {
 	color: #FFFFFF;
 	font-size: 15px;
-	margin-top: 5px;
+	margin-top: 10px;
 }
 
 .arrows {
 	position: relative;
 	width: 100%;
+	cursor: pointer;
 }
 
 .arrow-left {
-	color: #FFFFFF;
-	position: absolute;
-	background: #777;
-	padding: 15px;
-	left: 0px;
-	top: 20px;
-	z-index: 99;
+	background: yellow;
+	width: 20px;
+	height: 50px;
+	float: left;
 	cursor: pointer;
+	z-index: 99;
 }
 
 .arrow-right {
-	color: #fff;
-	position: absolute;
-	background: #777;
-	padding: 15px;
-	right: 0px;
-	top: 20px;
-	z-index: 100;
+	background: yellow;
+	width: 20px;
+	height: 50px;
+	float: right;
 	cursor: pointer;
+	z-index: 99;
 }
+
 
 @media (max-width: 624px) {
 	.arrows {
 	position: relative;
-	margin-right: auto;
-	margin-bottom: 0;
-	width: 103%;
+	margin: 0px auto;
+	width: 96px;
 	}
 	.arrow-left {
-	top: 20px;
+	top: -20px;
 	}
 
 	.arrow-right {
 	right: 0;
-	top: 20px;
+	top: -20px;
 	}
 }
 
@@ -614,16 +668,6 @@ footer {
 ***********NOT GLOBAL**************************
 *************************************/
 @media screen and (max-width:1450px){
-#videos .vid-container #vid_frame {
-	left: 15%;
-	width: 70%;
-}
-#mainwrapper #videos .vid-container {
-	padding-top: 0;
-	padding-right: 0;
-	padding-left: 0;
-	padding-bottom: 39%;
-}
 
 }
 
@@ -641,13 +685,6 @@ footer {
 	margin-right: auto;
 	justify-content: center;
 	display: inline-block;
-}
-#videos .vid-container #vid_frame {
-	left: 10%;
-	width: 80%;
-}
-#mainwrapper #videos .vid-container {
-	padding-bottom: 45%;
 }
 }
 
@@ -703,9 +740,7 @@ footer {
 #sidebar nav ul {
 	margin-top: 0px;
 }
-#sidebar2 nav ul {
 
-}
 footer {
 	/* Footer region */
 	width: 96%;
@@ -720,12 +755,9 @@ footer {
 	/* Header */
 	width: 100%;
 }
-#mainwrapper #footerbar {
 
-}
 #footerbar #CCVC {
 	margin-top: 10px;
-
 }
 }
 /* Tablet view */
@@ -806,9 +838,7 @@ footer {
 #footerbar {
 	position: absolute;
 }
-#mainwrapper #art art-table {
 
-}
 #mainContent h1 .myHeader {
 	text-align: center;
 	font-size: 40px;
@@ -860,8 +890,6 @@ footer {
 	width: 100%;
 }
 
-
-
 #footerbar #update {
 	float: none;
 	width: 100%;
@@ -892,8 +920,7 @@ footer {
 	left: 0px;
 	margin-left: 0px;
 }
-#videos h1 {
-}
+
 #biocontent .imggroup {
 	display: none;
 }
@@ -904,11 +931,11 @@ footer {
 	display: block;
 	height: 215px;
 	text-align: center;
-	margin-top: 25px;
-	margin-bottom: 25px;
+	background-size: 25% 60%;
+	margin-bottom: -50px;
 }
 #biocontent .biogroup {
-	min-width: 200%;
+	min-width: 100%;
 	max-width: 100%;
 
 }
@@ -917,21 +944,15 @@ footer {
 }
 #imggroup-sm h1 {
 	float: none;
-	margin-top: 175px;
+	margin-top: 117px;
 	margin-right: 0%;
 	margin-left: 0%;
 	margin-bottom: 0px;
-	position: fixed;
+	position: relative;
 	text-align: center;
 	width: 100%;
+	font-size: 25px;
 }
-
-
-
-
-
-
-
 
 }
 
@@ -992,8 +1013,7 @@ footer {
 	margin: 0px;
 
 }
-#footerbar {
-}
+
 .myHeader {
 	font-size: 35px;
 }
@@ -1001,14 +1021,14 @@ footer {
 }
 
 .bodybackground {
-	height: 0px;
+	height: vmax;
 	background-color: rgba(0,0,0,1.00);
 	background-position: center;
 	text-align: center;
 }
 
 .video_contain {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
@@ -1033,9 +1053,15 @@ footer {
 	padding-top: 30px;
 }
 .invoke-portal nav42 {
-	margin: 30px 2%;
+	margin-top: 30px;
+	margin-right: 3%;
+	margin-left: 2%;
+	margin-bottom: 30px;
 	display: inline-block;
-	padding: 0px 2%;
+	padding-top: 0px;
+	padding-right: 0%;
+	padding-left: 2%;
+	padding-bottom: 0px;
 	color: #FFFFFF;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
 	font-size: 30px;
@@ -1082,9 +1108,9 @@ footer {
 	font-weight: 400;
 	color: rgba(255,255,255,1.00);
 	max-width: 40%;
-	min-width: 200px;
-	overflow-y: auto;
 	perspective: 1px;
+	min-width: 300px;
+	overflow-y: auto;
 }
 .interests {
 	border: 5px groove rgba(255,255,255,1.00);
@@ -1111,8 +1137,6 @@ footer {
 	color: rgba(208,208,208,1.00);
 }
 
-
-
 .education{
 	border: 5px groove rgba(255,255,255,1.00);
 	height: auto;
@@ -1133,7 +1157,7 @@ footer {
 }
 #biocontent {
 	width: 100%;
-	height: 85vh;
+	height: 100%;
 	display: flex;
 }
 #imggroup-sm {
@@ -1149,7 +1173,7 @@ footer {
 	overflow-y: auto;
 	perspective: 1px;
 }
-#gameH1 {
+.gameH1-L {
 	text-align: left;
 	min-width: 25%;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
@@ -1157,7 +1181,7 @@ footer {
 	font-weight: 400;
 	color: rgba(255,255,255,1.00);
 }
-#gameH1-R {
+.gameH1-R {
 	text-align: right;
 	min-width: 25%;
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
@@ -1166,22 +1190,22 @@ footer {
 	text-decoration: underline;
 	flex-basis: auto;
 }
-#gameP {
+.gameP {
 	display: flex;
 }
-#gameName {
+.gameName {
 	padding-top: 2px;
 	padding-bottom: 20px;
 	text-decoration: none;
 
 }
-#gameDesc {
+.gameDesc {
 	font-style: italic;
 	color: rgba(163,163,163,1.00);
 	text-decoration: none;
 	padding-bottom: 25px;
 }
-#gameTitle {
+.gameTitle {
 	text-decoration: underline;
 }
 #audio {
@@ -1194,8 +1218,7 @@ footer {
 	overflow-y: auto;
 	perspective: 1px;
 }
-#audioItem {
-}
+
 #audioInfo {
 	text-align: left;
 }
@@ -1243,12 +1266,16 @@ footer {
 	width: 25%;
 	border: thick groove rgba(255,255,255,1.00);
 	height: 100%;
+	padding-left: 10px;
+	padding-top: 10px;
 }
 #topics {
 	border: thick groove rgba(255,255,255,1.00);
 	width: 25%;
-	text-align: center;
+	text-align: left;
 	height: 100%;
+	padding-left: 10px;
+	padding-top: inherit;
 }
 #discussion {
 	height: 91px;
@@ -1266,7 +1293,26 @@ footer {
 #Blog {
 	width: 100%;
 	height: 100%;
+	padding-top: 1ex;
+	padding-right: 2ex;
+	padding-left: 0ex;
+	padding-bottom: 0ex;
 	text-align: left;
 }
-.blogCSS {
+
+.myImg:hover {
+	opacity: 1;
+}
+.myVidContainer {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 854px;
+	background-color: rgba(0,0,0,0.00);
+	/* [disabled]min-width: 440px; */
+}
+#arrow-right {
+	
+}
+#left-arrow {
+	
 }
