@@ -390,14 +390,14 @@ footer {
 	transition: 0.3s;
 	color: white;
 }
-/*.arrow-left:hover {
+.arrow-left:hover {
 	background-color: rgba(213,0,3,1.00);
 	transition: 0.3s;
 }
 .arrow-right:hover {
 	background-color: rgba(213,0,3,1.00);
 	transition: 0.3s;
-}*/
+}
 header a {
 	color: inherit;
 }
@@ -583,7 +583,10 @@ h1 strong a:hover {
 	width: 148px;
 	height: 148px;
 	float: left;
-	margin: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
 	cursor: pointer;
 	opacity: .7;
 	position: relative;
@@ -595,7 +598,7 @@ h1 strong a:hover {
 
 
 .vid-list-container {
-	width: 92%;
+	width: 100%;
 	overflow: hidden;
 	float: left;
 }
@@ -630,21 +633,25 @@ h1 strong a:hover {
 }
 
 .arrow-left {
-	background: yellow;
-	width: 20px;
-	height: 50px;
-	float: left;
-	cursor: pointer;
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	left: -20px;
+	top: 10px;
 	z-index: 99;
+	cursor: pointer;
 }
 
 .arrow-right {
-	background: yellow;
-	width: 20px;
-	height: 50px;
-	float: right;
+	color: #fff;
+	position: absolute;
+	background: #777;
+	padding: 15px;
+	right: -20px;
+	top: 10px;
+	z-index: 100;
 	cursor: pointer;
-	z-index: 99;
 }
 
 
@@ -1089,7 +1096,6 @@ footer {
 	flex-direction: column;
 	position: fixed;
 	width: 90%;
-	overflow-y: auto;
 	perspective: 1px;
 	margin-left: 0%;
 	height: 100%;
