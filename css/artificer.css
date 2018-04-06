@@ -398,6 +398,7 @@ footer {
 	background-color: rgba(213,0,3,1.00);
 	transition: 0.3s;
 }
+<<<<<<< HEAD
 header a {
 	color: inherit;
 }
@@ -411,6 +412,8 @@ h1 strong a {
 h1 strong a:hover {
 	color: #FFFFFF;
 }
+=======
+>>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
 
 
 
@@ -583,6 +586,7 @@ h1 strong a:hover {
 	width: 148px;
 	height: 148px;
 	float: left;
+<<<<<<< HEAD
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-left: 5px;
@@ -590,6 +594,12 @@ h1 strong a:hover {
 	cursor: pointer;
 	opacity: .7;
 	position: relative;
+=======
+	margin: 0px;
+	padding: 10px;
+	cursor: pointer;
+	opacity: .7;
+>>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
 }
 .vid-item:hover {
 	opacity: 1;
@@ -633,24 +643,38 @@ h1 strong a:hover {
 }
 
 .arrow-left {
+<<<<<<< HEAD
 	color: #fff;
 	position: absolute;
 	background: #777;
 	padding: 15px;
 	left: -20px;
 	top: 10px;
+=======
+	color: #FFF;
+	position: absolute;
+	background: #777;
+	left: -25px;
+	top: -130px;
+>>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
 	z-index: 99;
-	cursor: pointer;
+	padding: 15px;
 }
 
 .arrow-right {
 	color: #fff;
 	position: absolute;
 	background: #777;
+	right: -25px;
+	top: -130px;
+	z-index: 99;
 	padding: 15px;
+<<<<<<< HEAD
 	right: -20px;
 	top: 10px;
 	z-index: 100;
+=======
+>>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
 	cursor: pointer;
 }
 
@@ -1314,6 +1338,7 @@ footer {
 	margin: 0 auto;
 	max-width: 854px;
 	background-color: rgba(0,0,0,0.00);
+<<<<<<< HEAD
 	/* [disabled]min-width: 440px; */
 }
 #arrow-right {
@@ -1321,4 +1346,7 @@ footer {
 }
 #left-arrow {
 	
+=======
+	min-width: 440px;
+>>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
 }
