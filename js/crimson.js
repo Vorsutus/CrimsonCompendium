@@ -2,17 +2,17 @@
 ///////STUFF FOR MODAL IMAGES
 
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $(".myImg");
+var img = $('.myImg');
 var modalImg = $("#img01");
 var captionText = document.getElementById("caption");
 
-$(".myImg").click(function(){
+$('.myImg').click(function(){
     modal.style.display = "block";
     var newSrc = this.src;
-    modalImg.attr("src", newSrc);
+    modalImg.attr('src', newSrc);
     captionText.innerHTML = this.alt;
 });
 
@@ -24,17 +24,17 @@ span.onclick = function() {
   modal.style.display = "none";
 	
 }// Get the modal
-var modal = document.getElementById("myModal");
+var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $(".myImg");
+var img = $('.myImg');
 var modalImg = $("#img01");
 var captionText = document.getElementById("caption");
 
-$(".myImg").click(function(){
+$('.myImg').click(function(){
     modal.style.display = "block";
     var newSrc = this.src;
-    modalImg.attr("src", newSrc);
+    modalImg.attr('src', newSrc);
     captionText.innerHTML = this.alt;
 });
 
@@ -48,6 +48,7 @@ span.onclick = function() {
 
 
 //////////////STUFF FOR VIDEO GALLERY
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -79,3 +80,18 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
+$(document).ready(function () {
+    $(".arrow-right").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "+=336"
+        }, 750);
+    });
+	
+    $(".arrow-left").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollLeft: "-=336"
+        }, 750);
+    });
+});
