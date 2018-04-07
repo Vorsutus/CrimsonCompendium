@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /////////VID ARROW STUFF/////////
 $(document).ready(function() {
 
@@ -21,21 +20,5 @@ $(document).ready(function() {
         $item.animate({"left":"+=300px"});
         }
 
-=======
-//////////// ARROWS
-$(document).ready(function () {
-    $(".arrow-right").bind("click", function (event) {
-        event.preventDefault();
-        $(".vid-list-container").stop().animate({
-            scrollLeft: "+=336"
-        }, 750);
-    });
-	
-    $(".arrow-left").bind("click", function (event) {
-        event.preventDefault();
-        $(".vid-list-container").stop().animate({
-            scrollLeft: "-=336"
-        }, 750);
->>>>>>> 1b7b843e3e88f37ec4c829167a0e4d0e99dc7695
     });
 });
